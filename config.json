@@ -1,0 +1,41 @@
+{
+    "application": {
+        "name": "Facebook Security Testing Framework",
+        "version": "2.0",
+        "purpose": "Educational - Security Testing Only",
+        "developer": "Security Research Team"
+    },
+    "security": {
+        "encryption_enabled": false,
+        "log_rotation": true,
+        "max_log_size_mb": 10,
+        "auto_cleanup": true
+    },
+    "testing": {
+        "max_workers": 20,
+        "timeout_seconds": 30,
+        "retry_attempts": 3,
+        "delay_between_requests": 1,
+        "use_proxy_rotation": true,
+        "user_agent_rotation": true
+    },
+    "limits": {
+        "max_accounts_per_test": 1000,
+        "max_password_attempts": 50,
+        "daily_test_limit": 10000,
+        "session_timeout_minutes": 60
+    },
+    "directories": {
+        "results": "results",
+        "success": "OK",
+        "checkpoint": "CP",
+        "logs": "logs"
+    },
+    "ethical_guidelines": [
+        "Only test systems you own or have permission to test",
+        "Do not use this tool for unauthorized access",
+        "Report vulnerabilities responsibly",
+        "Respect privacy and data protection laws",
+        "Follow bug bounty program guidelines"
+    ]
+}
